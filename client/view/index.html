@@ -1,0 +1,37 @@
+<html ng-app="myApp">
+<head>
+	<title></title>
+</head>
+<body>
+Hello
+
+<div ng-controller="MeetupController">total {{meetups.length}} exists
+<ul>
+	<li ng-repeat="meetup in meetups">
+		{{meetup.name}}
+	</li>
+</ul>
+<form ng-submit="createMeetup()">
+<input type="text" placeholder="Meet up" ng-model="meetupName">
+<button type="submit">Add</button>
+</form>
+
+
+</div>
+
+
+<script type="text/javascript" src="/angularLib/angular.min.js"></script>
+
+<script type="text/javascript" src="/angularLib/angular-resource.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+<script type="text/javascript">
+
+
+
+</script>
+<script type="text/javascript" src="/js/controllers/meetup-controller.js"></script>
+</body>
+</html>
+
